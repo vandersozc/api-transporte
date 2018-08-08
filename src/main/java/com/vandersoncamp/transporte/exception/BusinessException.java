@@ -1,0 +1,1 @@
+package com.vandersoncamp.transporte.exception;import javax.xml.bind.annotation.XmlRootElement;@XmlRootElement(name = "BusinessException")public class BusinessException extends RuntimeException {    private static final long serialVersionUID = 1L;    public BusinessException(String message) {        super(message);    }}
