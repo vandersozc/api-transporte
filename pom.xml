@@ -6,7 +6,7 @@
     <groupId>com.vandersoncamp</groupId>
     <artifactId>api-transporte</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Transporte POA</name>
+    <name>api-transporte</name>
     <description>Api Transporte</description>
     <packaging>jar</packaging>
 
@@ -21,8 +21,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <version.postgresql>42.2.4</version.postgresql>
-        <java.version>1.8</java.version>
-        <jjwt.version>0.9.0</jjwt.version>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
@@ -117,7 +115,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco.version}</version>
+                <version>0.7.2.201409121644</version>
                 <configuration>
                     <append>true</append>
                 </configuration>
