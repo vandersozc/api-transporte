@@ -1,0 +1,1 @@
+package com.vandersoncamp.transporte.repository;import com.vandersoncamp.transporte.model.LinhaLotacao;import org.springframework.data.jpa.repository.JpaRepository;import org.springframework.stereotype.Repository;@Repositorypublic interface LinhaLotacaoRepository extends JpaRepository<LinhaLotacao, Long> {}
