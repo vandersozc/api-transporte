@@ -1,0 +1,1 @@
+package com.vandersoncamp.transporte.dto;public class LinhaDTO {    private String id;    private String codigo;    private String nome;    public String getId() {        return id;    }    public String getCodigo() {        return codigo;    }    public String getNome() {        return nome;    }}
