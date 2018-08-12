@@ -4,7 +4,8 @@
 [![SonarQube Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.vandersoncamp%3Aapi-transporte&metric=coverage)](https://sonarcloud.io/dashboard?id=com.vandersoncamp%3Aapi-transporte)
 [![SonarQube Code Smells](https://sonarcloud.io/api/project_badges/measure?project=com.vandersoncamp%3Aapi-transporte&metric=code_smells)](https://sonarcloud.io/dashboard?id=com.vandersoncamp%3Aapi-transporte) 
 
-![Spring](https://spring.io/img/spring-by-pivotal-9066b55828deb3c10e27e609af322c40.png)
+![Spring](https://javatutorial.net/wp-content/uploads/2017/12/spring-featured-image.png)
+![JUnit](https://solidsoft.files.wordpress.com/2018/03/mockito-junit5-logo3-horiz.png)
 
 -------
 <p align="center">
