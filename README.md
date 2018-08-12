@@ -48,7 +48,8 @@ Para os testes de integração da API foi utilizado o banco de dados [HSQLDB](ht
 Serviços disponíveis para utilização da API.
 
 ```
-Criar cliente: POST: http://localhost:8080/clientes
+Criar cliente: 
+POST: http://localhost:8080/clientes
 
 {
    "nome": "Luis Carlos da Silva",
@@ -58,7 +59,8 @@ Criar cliente: POST: http://localhost:8080/clientes
 }
 ```
 ```
-Listar clientes: GET: http://localhost:8080/clientes
+Listar clientes: 
+GET: http://localhost:8080/clientes
 
 [
 	{
@@ -78,7 +80,8 @@ Listar clientes: GET: http://localhost:8080/clientes
 ]
 ```
 ```
-Buscar cliente: GET: http://localhost:8080/clientes/{id}
+Buscar cliente: 
+GET: http://localhost:8080/clientes/{id}
 
 {
     "id": 1,
@@ -89,7 +92,8 @@ Buscar cliente: GET: http://localhost:8080/clientes/{id}
 }
 ```
 ```
-#**Atualizar um cliente:** PUT: http://localhost:8080/clientes/{id}
+Atualizar um cliente: 
+PUT: http://localhost:8080/clientes/{id}
 
 {
 	"id": 2,
@@ -100,25 +104,32 @@ Buscar cliente: GET: http://localhost:8080/clientes/{id}
 }
 ```
 ```
-#**Remover um cliente:** DELETE: http://localhost:8080/clientes/{id}
+Remover um cliente: 
+DELETE: http://localhost:8080/clientes/{id}
 ```
 ```
-#Integrar dados de linhas de Ônibus: POST: http://localhost:8080/linha-onibus/integrar
+Integrar dados de linhas de Ônibus: 
+POST: http://localhost:8080/linha-onibus/integrar
 ```
 ```
-Integrar dados de linhas de Lotações: POST: http://localhost:8080/linha-lotacao/integrar
+Integrar dados de linhas de Lotações: 
+POST: http://localhost:8080/linha-lotacao/integrar
 ```
 ```
-Listar as linhas de ônibus: GET: http://localhost:8080/linha-onibus/consultar
+Listar as linhas de ônibus: 
+GET: http://localhost:8080/linha-onibus/consultar
 ```
 ```
-Filtrar a lista de ônibus pelo nome: GET: http://localhost:8080/linha-onibus/filter?nome=agostinho
+Filtrar a lista de ônibus pelo nome: 
+GET: http://localhost:8080/linha-onibus/filter?nome=agostinho
 ```
 ```
-Listar as linhas de Lotações: GET: http://localhost:8080/linha-lotacao/consultar
+Listar as linhas de Lotações: 
+GET: http://localhost:8080/linha-lotacao/consultar
 ```
 ```
-Incluir linhas de Ônibus ou Lotações para um cliente: POST: http://localhost:8080/cliente-linha
+Incluir linhas de Ônibus ou Lotações para um cliente: 
+POST: http://localhost:8080/cliente-linha
 
 {
    "cliente":{
@@ -151,5 +162,6 @@ Incluir linhas de Ônibus ou Lotações para um cliente: POST: http://localhost:
 }
 ```
 ```
-Listar todas as linhas cadastradas para o cliente: GET: http://localhost:8080/cliente-linha/cliente/{id}
+Listar todas as linhas cadastradas para o cliente: 
+GET: http://localhost:8080/cliente-linha/cliente/{id}
 ```
