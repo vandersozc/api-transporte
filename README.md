@@ -47,9 +47,9 @@ Para os testes de integração da API foi utilizado o banco de dados [HSQLDB](ht
 
 Serviços disponíveis para utilização da API.
 
-Criar cliente:
-POST: http://localhost:8080/clientes
 ```
+Criar cliente: POST: http://localhost:8080/clientes
+
 {
    "nome": "Luis Carlos da Silva",
    "documento":"70678646821",
@@ -58,9 +58,9 @@ POST: http://localhost:8080/clientes
 }
 ```
 
-Listar clientes:
-GET: http://localhost:8080/clientes
 ```
+Listar clientes: GET: http://localhost:8080/clientes
+
 [
 	{
 		"id": 1,
