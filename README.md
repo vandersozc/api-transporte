@@ -4,9 +4,6 @@
 [![SonarQube Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.vandersoncamp%3Aapi-transporte&metric=coverage)](https://sonarcloud.io/dashboard?id=com.vandersoncamp%3Aapi-transporte)
 [![SonarQube Code Smells](https://sonarcloud.io/api/project_badges/measure?project=com.vandersoncamp%3Aapi-transporte&metric=code_smells)](https://sonarcloud.io/dashboard?id=com.vandersoncamp%3Aapi-transporte) 
 
-![Spring](https://javatutorial.net/wp-content/uploads/2017/12/spring-featured-image.png)
-![JUnit](https://developersjournal.in/wp-content/uploads/2017/07/junit-5.png)
-
 -------
 <p align="center">
     <a href="#projeto">Projeto</a> &bull;
@@ -40,6 +37,70 @@ CREATE DATABASE "transporteDB" WITH OWNER = postgres ENCODING = 'UTF8' CONNECTIO
 
 Utiliza [JUnit 5](https://junit.org/junit5/) para testes unitários e testes de integração. Para os testes unitários foi utilizado o Framework [Mockito](https://site.mockito.org/) para criação de objetos. Para os testes de integração da API foi utilizado o serviço [REST-assured](http://rest-assured.io/) para testar e validar os serviços.
 
+Para os testes de integração da API foi utilizado o banco de dados [HSQLDB](http://hsqldb.org/). Foi utilizado por ser consideravelmente pequeno e eficiente na execução de testes, simula e execução real dos serviços de persistência em bancos relacionais comuns, alem de ter uma configuração simples.
+
 ## Build e Análise
 - O build, execução dos testes, e geração de relatórios de cobertura pode ser visualizado remotamente através do: [Travis CI](https://travis-ci.com/vandersozc/api-transporte).
 - A análise de código e relatório de cobertura de testes pode ser visualizada em: [SonarCLoud](https://travis-ci.com/vandersozc/api-transporte).
+
+## Serviços
+
+Serviços disponíneis para utilização da API.
+
+Criar cliente:
+POST: http://localhost:8080/clientes
+```
+{
+   "nome": "Luis Carlos da Silva",
+   "documento":"70678646821",
+   "telefone":"48339828609",
+   "email":"luis.carlos_@gmail.com"
+}
+```
+
+Listar clientes:
+GET: http://localhost:8080/clientes
+```
+[
+	{
+		"id": 1,
+		"nome": "Luis Carlos da Silva",
+		"documento": "70678646821",
+		"telefone": 48339828609,
+		"email": "luis.carlos_@gmail.com"
+	},
+	{
+		"id": 2,
+		"nome": "Maria de Paula",
+		"documento": "99044019260",
+		"telefone": 4834369822,
+		"email": "maria_p_@gmail.com"
+	}
+]
+```
+
+Buscar cliente:
+GET: http://localhost:8080/clientes/{id}
+```
+{
+    "id": 1,
+    "nome": "Luis Carlos da Silva",
+    "documento": "70678646821",
+    "telefone": 48339828609,
+    "email": "luis.carlos_@gmail.com"
+}
+```
+
+Atualizar um cliente:
+PUT: http://localhost:8080/clientes/{id}
+```
+{
+	"id": 5,
+	"nome": "Maria de Paula Freitas",
+	"documento": "99044019260",
+	"telefone": 4834369822,
+	"email": "maria_p_@gmail.com"
+}
+```
+Remover um cliente:
+DELETE: http://localhost:8080/clientes/{id}
