@@ -4,6 +4,7 @@
 [![SonarQube Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.vandersoncamp%3Aapi-transporte&metric=coverage)](https://sonarcloud.io/dashboard?id=com.vandersoncamp%3Aapi-transporte)
 [![SonarQube Code Smells](https://sonarcloud.io/api/project_badges/measure?project=com.vandersoncamp%3Aapi-transporte&metric=code_smells)](https://sonarcloud.io/dashboard?id=com.vandersoncamp%3Aapi-transporte) 
 
+![Spring](https://spring.io/img/spring-by-pivotal-9066b55828deb3c10e27e609af322c40.png)
 
 -------
 <p align="center">
@@ -36,7 +37,7 @@ CREATE DATABASE "transporteDB" WITH OWNER = postgres ENCODING = 'UTF8' CONNECTIO
 
 ## Testes e Cobertura
 
-Utiliza [JUnit 5](https://junit.org/junit5/) para testes unitários e testes de integração. Para os testes unitários foi utilizado o Framework [Mockito]([JUnit 5](https://junit.org/junit5/) para criação de objetos. Para os testes de integração da API foi utilizado o serviço [REST-assured](http://rest-assured.io/) para testar e validar os serviços.
+Utiliza [JUnit 5](https://junit.org/junit5/) para testes unitários e testes de integração. Para os testes unitários foi utilizado o Framework [Mockito](https://site.mockito.org/) para criação de objetos. Para os testes de integração da API foi utilizado o serviço [REST-assured](http://rest-assured.io/) para testar e validar os serviços.
 
 ## Build e Análise
 - O build, execução dos testes, e geração de relatórios de cobertura pode ser visualizado remotamente através do: [Travis CI](https://travis-ci.com/vandersozc/api-transporte).
