@@ -57,7 +57,6 @@ Criar cliente: POST: http://localhost:8080/clientes
    "email":"luis.carlos_@gmail.com"
 }
 ```
-
 ```
 Listar clientes: GET: http://localhost:8080/clientes
 
@@ -78,10 +77,9 @@ Listar clientes: GET: http://localhost:8080/clientes
 	}
 ]
 ```
-
-Buscar cliente:
-GET: http://localhost:8080/clientes/{id}
 ```
+Buscar cliente: GET: http://localhost:8080/clientes/{id}
+
 {
     "id": 1,
     "nome": "Luis Carlos da Silva",
@@ -90,10 +88,9 @@ GET: http://localhost:8080/clientes/{id}
     "email": "luis.carlos_@gmail.com"
 }
 ```
-
-Atualizar um cliente:
-PUT: http://localhost:8080/clientes/{id}
 ```
+Atualizar um cliente: PUT: http://localhost:8080/clientes/{id}
+
 {
 	"id": 2,
 	"nome": "Maria de Paula Freitas",
@@ -102,33 +99,27 @@ PUT: http://localhost:8080/clientes/{id}
 	"email": "maria_p_@gmail.com"
 }
 ```
-Remover um cliente:
-DELETE: http://localhost:8080/clientes/{id}
+```
+Remover um cliente: DELETE: http://localhost:8080/clientes/{id}
 ```
 ```
-Integrar dados de linhas de Ônibus:
-POST: http://localhost:8080/linha-onibus/integrar
+Integrar dados de linhas de Ônibus: POST: http://localhost:8080/linha-onibus/integrar
 ```
 ```
-Integrar dados de linhas de Lotações:
-POST: http://localhost:8080/linha-lotacao/integrar
+Integrar dados de linhas de Lotações: POST: http://localhost:8080/linha-lotacao/integrar
 ```
 ```
-Listar as linhas de ônibus:
-GET: http://localhost:8080/linha-onibus/consultar
+Listar as linhas de ônibus: GET: http://localhost:8080/linha-onibus/consultar
 ```
 ```
-Filtrar a lista de ônibus pelo nome:
-GET: http://localhost:8080/linha-onibus/filter?nome=agostinho
+Filtrar a lista de ônibus pelo nome: GET: http://localhost:8080/linha-onibus/filter?nome=agostinho
 ```
 ```
-Listar as linhas de Lotações:
-GET: http://localhost:8080/linha-lotacao/consultar
+Listar as linhas de Lotações: GET: http://localhost:8080/linha-lotacao/consultar
 ```
 ```
-Incluir linhas de Ônibus ou Lotações para um cliente:
-POST: http://localhost:8080/cliente-linha
-```
+Incluir linhas de Ônibus ou Lotações para um cliente: POST: http://localhost:8080/cliente-linha
+
 {
    "cliente":{
       "id":"1"
@@ -159,5 +150,6 @@ POST: http://localhost:8080/cliente-linha
    ]
 }
 ```
-Listar todas as linhas cadastradas para o cliente:
-GET: http://localhost:8080/cliente-linha/cliente/{id}
+```
+Listar todas as linhas cadastradas para o cliente: GET: http://localhost:8080/cliente-linha/cliente/{id}
+```
