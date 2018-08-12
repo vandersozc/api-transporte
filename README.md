@@ -95,7 +95,7 @@ Atualizar um cliente:
 PUT: http://localhost:8080/clientes/{id}
 ```
 {
-	"id": 5,
+	"id": 2,
 	"nome": "Maria de Paula Freitas",
 	"documento": "99044019260",
 	"telefone": 4834369822,
@@ -104,3 +104,57 @@ PUT: http://localhost:8080/clientes/{id}
 ```
 Remover um cliente:
 DELETE: http://localhost:8080/clientes/{id}
+```
+```
+Integrar dados de linhas de Ônibus:
+POST: http://localhost:8080/linha-onibus/integrar
+```
+```
+Integrar dados de linhas de Lotações:
+POST: http://localhost:8080/linha-lotacao/integrar
+```
+```
+Incluir linhas de Ônibus ou Lotações para um cliente:
+POST: http://localhost:8080/cliente-linha
+```
+{
+   "cliente":{
+      "id":"1"
+   },
+   "linhasOnibus":[
+      {
+         "id":"5527",
+         "codigo":"250-1",
+         "nome":"1 DE MAIO"
+      },
+      {
+         "id":"5037",
+         "codigo":"214-1",
+         "nome":"5ª UNIDADE\/ESCOLAR"
+      }
+   ],
+   "linhasLotacoes":[
+      {
+         "id":"34",
+         "codigo":"20.5-1",
+         "nome":"ALTO TERESOPOLIS - VIA PRAIA DE BELAS"
+      },
+      {
+         "id":"35",
+         "codigo":"20.5-2",
+         "nome":"ALTO TERESOPOLIS - VIA PRAIA DE BELAS"
+      }
+   ]
+}
+```
+Listar as linhas de ônibus:
+GET: http://localhost:8080/linha-onibus/consultar
+```
+```
+Filtar a lista de ônibus:
+GET: http://localhost:8080/linha-onibus/filter?nome=agostinho
+```
+```
+
+Listar as linhas de Lotações:
+GET: http://localhost:8080/linha-lotacao/consultar
