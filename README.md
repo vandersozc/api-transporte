@@ -35,7 +35,7 @@ CREATE DATABASE "transporteDB" WITH OWNER = postgres ENCODING = 'UTF8' CONNECTIO
 
 ## Testes e Cobertura
 
-Utiliza [JUnit 5](https://junit.org/junit5/) para testes unitários e testes de integração. Para os testes unitários foi utilizado o Framework [Mockito](https://site.mockito.org/) para criação de objetos. Para os testes de integração da API foi utilizado o serviço [REST-assured](http://rest-assured.io/) para testar e validar os serviços.
+Utiliza [JUnit 5](https://junit.org/junit5/) para testes unitários e testes de integração, foi utilizado devido a utilização em grande escala pelas empresas e em sua última versão trouxe melhorias e tornou os teste e asserts mais simplificados devido ao uso de expressões lambdas. Para os testes unitários foi utilizado o Framework [Mockito](https://site.mockito.org/) para criação de objetos em escopo de teste. Para os testes de integração da API foi utilizado o serviço [REST-assured](http://rest-assured.io/) para testar e validar os serviços, proporciona um real acesso externo aos endpoints da API.
 
 Para os testes de integração da API foi utilizado o banco de dados [HSQLDB](http://hsqldb.org/). Foi utilizado por ser consideravelmente pequeno e eficiente na execução de testes, simula e execução real dos serviços de persistência em bancos relacionais comuns, alem de ter uma configuração simples.
 
