@@ -45,7 +45,7 @@ Para os testes de integração da API foi utilizado o banco de dados [HSQLDB](ht
 
 ## Serviços
 
-Serviços disponíneis para utilização da API.
+Serviços disponíveis para utilização da API.
 
 Criar cliente:
 POST: http://localhost:8080/clientes
@@ -114,6 +114,18 @@ Integrar dados de linhas de Lotações:
 POST: http://localhost:8080/linha-lotacao/integrar
 ```
 ```
+Listar as linhas de ônibus:
+GET: http://localhost:8080/linha-onibus/consultar
+```
+```
+Filtrar a lista de ônibus pelo nome:
+GET: http://localhost:8080/linha-onibus/filter?nome=agostinho
+```
+```
+Listar as linhas de Lotações:
+GET: http://localhost:8080/linha-lotacao/consultar
+```
+```
 Incluir linhas de Ônibus ou Lotações para um cliente:
 POST: http://localhost:8080/cliente-linha
 ```
@@ -147,14 +159,5 @@ POST: http://localhost:8080/cliente-linha
    ]
 }
 ```
-Listar as linhas de ônibus:
-GET: http://localhost:8080/linha-onibus/consultar
-```
-```
-Filtar a lista de ônibus:
-GET: http://localhost:8080/linha-onibus/filter?nome=agostinho
-```
-```
-
-Listar as linhas de Lotações:
-GET: http://localhost:8080/linha-lotacao/consultar
+Listar todas as linhas cadastradas para o cliente:
+GET: http://localhost:8080/cliente-linha/cliente/{id}
