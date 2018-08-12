@@ -89,7 +89,7 @@ Buscar cliente: GET: http://localhost:8080/clientes/{id}
 }
 ```
 ```
-Atualizar um cliente: PUT: http://localhost:8080/clientes/{id}
+#**Atualizar um cliente:** PUT: http://localhost:8080/clientes/{id}
 
 {
 	"id": 2,
@@ -100,10 +100,10 @@ Atualizar um cliente: PUT: http://localhost:8080/clientes/{id}
 }
 ```
 ```
-Remover um cliente: DELETE: http://localhost:8080/clientes/{id}
+#**Remover um cliente:** DELETE: http://localhost:8080/clientes/{id}
 ```
 ```
-Integrar dados de linhas de Ônibus: POST: http://localhost:8080/linha-onibus/integrar
+#Integrar dados de linhas de Ônibus: POST: http://localhost:8080/linha-onibus/integrar
 ```
 ```
 Integrar dados de linhas de Lotações: POST: http://localhost:8080/linha-lotacao/integrar
