@@ -41,7 +41,7 @@ Para os testes de integração da API foi utilizado o banco de dados [HSQLDB](ht
 
 ## Build e Análise
 - O build, execução dos testes, e geração de relatórios de cobertura pode ser visualizado remotamente através do: [Travis CI](https://travis-ci.com/vandersozc/api-transporte).
-- A análise de código e relatório de cobertura de testes pode ser visualizada em: [SonarCLoud](https://travis-ci.com/vandersozc/api-transporte).
+- A análise de código e relatório de cobertura de testes pode ser visualizada em: [SonarCLoud](https://sonarcloud.io/dashboard?id=com.vandersoncamp%3Aapi-transporte).
 
 ## Serviços
 
