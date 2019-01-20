@@ -4,15 +4,6 @@
 [![SonarQube Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.vandersoncamp%3Aapi-transporte&metric=coverage)](https://sonarcloud.io/dashboard?id=com.vandersoncamp%3Aapi-transporte)
 [![SonarQube Code Smells](https://sonarcloud.io/api/project_badges/measure?project=com.vandersoncamp%3Aapi-transporte&metric=code_smells)](https://sonarcloud.io/dashboard?id=com.vandersoncamp%3Aapi-transporte) 
 
--------
-<p align="center">
-    <a href="#projeto">Projeto</a> &bull;
-	<a href="#instalação">Instalação</a> &bull;
-	<a href="#testes-e-cobertura">Testes e Cobertura</a> &bull;
-	<a href="#build-e-análise">Build e Análise</a> &bull;
-	<a href="#servicos">Servicos</a> &bull;
-</p>
--------
 
 ## Projeto
 
@@ -21,15 +12,18 @@ Serviço Rest para integração de dados de linhas de transporte
 ## Instalação
 
 Este projeto utiliza [Maven](https://maven.apache.org/) para build e gerenciamento das dependências e foi construído utilizando o Framework [Spring](https://spring.io/). Efetuar o download do projeto e executar o arquivo:
-```
+
+```sql
 TransporteApplication.java
 ```
 O banco de dados utilizado na api foi o [PostgreSQL](https://www.postgresql.org/), o banco pode ser alterado conforme necessidade do usuario. Para utilizar outro banco é necessário alterar as configurações no arquivo:
-```
+
+```sql
 application.properties
 ```
 O PostgreSql foi escolhido por se tratar de um banco de fácil acesso, se destaca por ser robusto e permitir realizar todos os comandos necessários para a exeecução da API. O banco pode ser criado atarvés do comando:
-```
+
+```sql
 CREATE DATABASE "transporteDB" WITH OWNER = postgres ENCODING = 'UTF8' CONNECTION LIMIT = -1;
 ```
 
@@ -47,7 +41,7 @@ Para os testes de integração da API foi utilizado o banco de dados [HSQLDB](ht
 
 Serviços disponíveis para utilização da API.
 
-```
+```json
 Criar cliente: 
 POST: http://localhost:8080/clientes
 
@@ -58,7 +52,8 @@ POST: http://localhost:8080/clientes
    "email":"luis.carlos_@gmail.com"
 }
 ```
-```
+
+```json
 Listar clientes: 
 GET: http://localhost:8080/clientes
 
@@ -79,7 +74,8 @@ GET: http://localhost:8080/clientes
 	}
 ]
 ```
-```
+
+```json
 Buscar cliente: 
 GET: http://localhost:8080/clientes/{id}
 
@@ -91,7 +87,8 @@ GET: http://localhost:8080/clientes/{id}
     "email": "luis.carlos_@gmail.com"
 }
 ```
-```
+
+```json
 Atualizar um cliente: 
 PUT: http://localhost:8080/clientes/{id}
 
@@ -103,31 +100,38 @@ PUT: http://localhost:8080/clientes/{id}
 	"email": "maria_p_@gmail.com"
 }
 ```
-```
+
+```json
 Remover um cliente: 
 DELETE: http://localhost:8080/clientes/{id}
 ```
-```
+
+```json
 Integrar dados de linhas de Ônibus: 
 POST: http://localhost:8080/linha-onibus/integrar
 ```
-```
+
+```json
 Integrar dados de linhas de Lotações: 
 POST: http://localhost:8080/linha-lotacao/integrar
 ```
-```
+
+```json
 Listar as linhas de ônibus: 
 GET: http://localhost:8080/linha-onibus/consultar
 ```
-```
+
+```json
 Filtrar a lista de ônibus pelo nome: 
 GET: http://localhost:8080/linha-onibus/filter?nome=agostinho
 ```
-```
+
+```json
 Listar as linhas de Lotações: 
 GET: http://localhost:8080/linha-lotacao/consultar
 ```
-```
+
+```json
 Incluir linhas de Ônibus ou Lotações para um cliente: 
 POST: http://localhost:8080/cliente-linha
 
@@ -161,7 +165,8 @@ POST: http://localhost:8080/cliente-linha
    ]
 }
 ```
-```
+
+```json
 Listar todas as linhas cadastradas para o cliente: 
 GET: http://localhost:8080/cliente-linha/cliente/{id}
 ```
